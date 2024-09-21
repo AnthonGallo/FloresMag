@@ -40,33 +40,32 @@ body {
 
 }
 .titulo {
-  margin-top: 20px; /* Asegúrate de que haya un margen superior */
-  margin-bottom: 180px; /* Ajusta este margen si es necesario */
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
-  position: absolute; /* Esto permite que se coloque en cualquier parte */
-  top: 20px; /* Coloca la frase a 20px del borde superior */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Ajusta la posición para centrar */
-  font-weight: bold;
-  letter-spacing: 10px;
-  opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
+  position: fixed; /* Mantiene el título siempre en la parte superior */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar */
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: yellow;
+    font-weight: bold;
+    letter-spacing: 2px; /* Espaciado ajustado */
+    opacity: 0.9; /* Hazlo ligeramente transparente si es necesario */
+    animation: fadeIn 3s ease-in-out forwards;
+    text-align: center;
+    font-size: 3vw; /* Tamaño de fuente responsivo */
+    max-width: 90%; /* Asegura que no se extienda demasiado */
 }
 
+/* Media Query para ajustar en pantallas más pequeñas */
 @media (max-width: 600px) {
-  .titulo {
-      font-size: 1.4rem; /* Tamaño reducido para pantallas pequeñas */
-      letter-spacing: 5px; /* Espaciado ajustado */
-  }
+    .titulo {
+        font-size: 5vw; /* Ajusta el tamaño en pantallas pequeñas */
+    }
 }
 
 @media (max-width: 400px) {
-  .titulo {
-      font-size: 1.1rem; /* Tamaño aún más reducido */
-      letter-spacing: 2px; /* Menos espaciado */
-  }
+    .titulo {
+        font-size: 7vw; /* Aumenta aún más el tamaño en pantallas muy pequeñas */
+    }
 }
 
 @keyframes fadeIn {
