@@ -41,30 +41,33 @@ body {
 }
 .titulo {
   position: fixed; /* Mantiene el título siempre en la parte superior */
-    top: 10px; /* Ajusta la distancia desde la parte superior */
+    top: 10px; /* Distancia desde la parte superior */
     left: 50%; /* Centra horizontalmente */
     transform: translateX(-50%); /* Ajusta para centrar */
     font-family: "Arial Narrow", Arial, sans-serif;
     color: yellow;
     font-weight: bold;
     letter-spacing: 2px; /* Espaciado ajustado */
-    opacity: 0.9; /* Hazlo ligeramente transparente si es necesario */
+    opacity: 0.9; /* Ligera transparencia */
     animation: fadeIn 3s ease-in-out forwards;
     text-align: center;
     font-size: 3vw; /* Tamaño de fuente responsivo */
     max-width: 90%; /* Asegura que no se extienda demasiado */
+    margin-bottom: 20px; /* Añade un margen inferior para espacio */
 }
 
 /* Media Query para ajustar en pantallas más pequeñas */
 @media (max-width: 600px) {
     .titulo {
-        font-size: 5vw; /* Ajusta el tamaño en pantallas pequeñas */
+        font-size: 4vw; /* Tamaño ajustado en pantallas pequeñas */
+        top: 5px; /* Distancia reducida desde la parte superior */
     }
 }
 
 @media (max-width: 400px) {
     .titulo {
-        font-size: 7vw; /* Aumenta aún más el tamaño en pantallas muy pequeñas */
+        font-size: 6vw; /* Tamaño aún más ajustado en pantallas muy pequeñas */
+        top: 5px; /* Mantiene la distancia reducida */
     }
 }
 
